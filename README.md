@@ -1,7 +1,7 @@
 # UK/US Market Access Divergence in Oncology Biologics: A Trastuzumab Deruxtecan Case Study
 
 A market access analysis comparing how the UK (NICE) and US payer systems evaluate
-the same medicine — trastuzumab deruxtecan (T-DXd, brand name Enhertu) — across two
+the same medicine, trastuzumab deruxtecan (T-DXd, brand name Enhertu), across two
 distinct indications (HER2-positive and HER2-low metastatic breast cancer).
 
 The project combines a verified n=13 dataset of NICE technology appraisals, a
@@ -9,7 +9,7 @@ four-document NLP theme comparison of NICE and US cost-effectiveness literature,
 and a single-medicine case study isolating indication-level and jurisdictional
 divergence in reimbursement outcomes.
 
-**Full report is available in [`outputs/documentation/enhertu_project_writeup.pdf`](./outputs/documentation/enhertu_project_writeup.pdf)** — start here
+**Full report is available in [`outputs/documentation/enhertu_project_writeup.pdf`](./outputs/documentation/enhertu_project_writeup.pdf)** - start here
 
 ---
 
@@ -18,16 +18,16 @@ divergence in reimbursement outcomes.
 1. **EAG disagreement** between a company's model and NICE's Evidence Assessment
    Group is the strongest observed predictor of appraisal outcome in the verified
    n=13 dataset (hypothesis-generating at this sample size, not a validated model).
-2. **Surrogate endpoint validity** (PFS→OS extrapolation) is a live point of
+2. **Surrogate endpoint validity** (PFS to OS extrapolation) is an active point of
    contest in NICE appraisals and categorically absent from US academic
-   cost-effectiveness papers — a structural difference in evidence standards,
+   cost-effectiveness papers. This is a structural difference in evidence standards,
    not a difference in emphasis.
 3. **A positive reimbursement outcome for one indication carries no guarantee
    for another**, even where medicine, manufacturer, and appraising body are
    held constant (T-DXd: ~600 eligible NHS patients under TA862 vs. zero under
    TA992).
 4. **NICE's most generous historical threshold, converted to USD, remains below
-   the floor of the US ICER benchmark range** — a persistent gap not attributable
+   the floor of the US ICER benchmark range**, a persistent gap not attributable
    to currency or reporting convention.
 
 Full findings, limitations, and strategic implications are in the report.
@@ -40,8 +40,8 @@ For a company or investor navigating a comparable multi-indication, multi-market
 launch, four practical implications follow from these findings:
 
 - **EAG disagreement is an early diligence signal.** The EAG's response to a
-  company's submitted model is available months before NICE's binding decision;
-  a preliminary signal of substantial disagreement should trigger an internal
+  company's submitted model is available months before NICE's binding decision.
+  A preliminary signal of substantial disagreement should trigger an internal
   pricing and evidence review immediately, not at final appraisal.
 - **UK-style surrogate endpoint justification should be planned at trial design
   stage**, not treated as a by-product of a US-oriented evidence package. This
@@ -94,9 +94,9 @@ This approach was taken to respect the terms of use of Crown-copyright NICE
 guidance and copyrighted academic literature, while keeping the full pipeline
 reproducible from public sources.
 
-**What *is* included**: the derived, coded dataset (`data/processed/`) — including
+**What *is* included**: the derived, coded dataset (`data/processed/`), including
 the verified n=13 NICE appraisal dataset, extraction logs, exclusion reports, and
-theme-extraction outputs — since these represent this project's own analytical
+theme-extraction outputs, since these represent this project's own analytical
 work, not reproductions of third-party documents.
 
 ---
@@ -119,7 +119,7 @@ evidentiary weight:
 
 A predictive model (logistic regression / gradient boosting) was deliberately
 **not** used for the n=13 dataset after diagnostic testing showed complete
-separation and severe leave-one-out coefficient instability — a known failure
+separation and severe leave-one-out coefficient instability, a known failure
 mode of maximum-likelihood estimation at small sample sizes. This is documented
 as a methodological finding in its own right (see report, Section 3.1 and
 Methodology Appendix B) rather than smoothed over.
@@ -191,7 +191,7 @@ python src/audit/peng_noise_vs_signal.py
 ## Limitations
 
 Every finding in this report carries its own explicitly stated limitation and
-is scoped to the evidence base that produced it — see the report for full detail.
+is scoped to the evidence base that produced it, see the report for full detail.
 In brief:
 
 - The n=13 dataset supports descriptive, hypothesis-generating findings, not a
@@ -200,7 +200,7 @@ In brief:
   representative sample of NICE or US CEA literature generally.
 - The T-DXd case study illustrates frictions that may recur elsewhere in NICE's
   broader appraisal activity but does not establish their frequency.
-- This analysis is scoped to the UK and US systems specifically; institutional
+- This analysis is scoped to the UK and US systems specifically. Institutional
   mechanisms identified here do not generalise to other jurisdictions without
   further comparative work (see report, Section 2.5, for a brief discussion of
   how Australia's PBS illustrates a third position on the evidence-versus-price
