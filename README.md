@@ -153,37 +153,37 @@ The `requirements.txt` file in the repository root lists the exact packages and 
 4. Regenerate raw text/data inputs:
 
 ```bash
-   python src/data_sourcing/clinicaltrials_pull.py
-   python src/data_sourcing/extract_nice_pdfs.py
-   python src/data_sourcing/search_key_figures.py
+python src/data_sourcing/clinicaltrials_pull.py
+python src/data_sourcing/extract_nice_pdfs.py
+python src/data_sourcing/search_key_figures.py
 ```
 
 5. Regenerate the coded dataset:
 
 ```bash
-   python src/analysis/clean_numeric_fields.py
-   python src/analysis/recode_variables.py
+python src/analysis/clean_numeric_fields.py
+python src/analysis/recode_variables.py
 ```
 
 6. Reproduce the core analysis and figures:
 
 ```bash
-   python src/analysis/analysis.py
-   python src/analysis/descriptive_charts.py
-   python src/analysis/theme_extraction.py
-   python src/analysis/threshold_comparison.py
-   python src/analysis/uptake_comparison.py
+python src/analysis/analysis.py
+python src/analysis/descriptive_charts.py
+python src/analysis/theme_extraction.py
+python src/analysis/threshold_comparison.py
+python src/analysis/uptake_comparison.py
 ```
 
 7. Reproduce audit and diagnostic checks:
 
 ```bash
-   python src/audit/verify_trial_data.py
-   python src/audit/separation_checks.py
-   python src/audit/verify_ta992_timeline.py
-   python src/audit/verify_cms_j9358.py
-   python src/audit/check_cdf_false_positives.py
-   python src/audit/peng_noise_vs_signal.py
+python src/audit/verify_trial_data.py
+python src/audit/separation_checks.py
+python src/audit/verify_ta992_timeline.py
+python src/audit/verify_cms_j9358.py
+python src/audit/check_cdf_false_positives.py
+python src/audit/peng_noise_vs_signal.py
 ```
 
 ---
