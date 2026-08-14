@@ -9,7 +9,7 @@ four-document NLP theme comparison of NICE and US cost-effectiveness literature,
 and a single-medicine case study isolating indication-level and jurisdictional 
 divergence in reimbursement outcomes.
 
-**[Full report is available in outputs/memo]** - start here  
+**Full report is available in [`outputs/documentation/enhertu_project_writeup.pdf`](./outputs/documentation/enhertu_project_writeup.pdf)  ** - start here  
 
 ---
 
