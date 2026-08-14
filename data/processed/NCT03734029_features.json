@@ -1,0 +1,27 @@
+{
+  "nct_id": "NCT03734029",
+  "brief_title": "Trastuzumab Deruxtecan (DS-8201a) Versus Investigator's Choice for HER2-low Breast Cancer That Has Spread or Cannot be Surgically Removed [DESTINY-Breast04]",
+  "phase": [
+    "PHASE3"
+  ],
+  "enrollment_count": 557,
+  "enrollment_type": "ACTUAL",
+  "overall_status": "ACTIVE_NOT_RECRUITING",
+  "primary_endpoints": [
+    "Progression-free Survival (PFS) Based on Blinded Independent Central Review (BICR) in the Hormone Receptor-Positive Cohort in Participants With HER2-low Breast Cancer"
+  ],
+  "secondary_endpoints": [
+    "Progression-free Survival (PFS) Based on Blinded Independent Central Review (BICR) in Participants With HER2-low Breast Cancer (All Patients) Regardless of Hormone Receptor Status",
+    "Progression-free Survival Based on Investigator Assessment in the Hormone Receptor-Positive Cohort in Participants With HER2-low Breast Cancer",
+    "Progression-free Survival Based on Investigator Assessment in Participants With HER2-low Breast Cancer (All Patients)",
+    "Overall Survival (OS) in the Hormone Receptor-Positive Cohort in Participants With HER2-low Breast Cancer",
+    "Number of Overall Survival Events (Deaths)",
+    "Overall Survival (OS) in All Patients",
+    "Best Overall Response and Confirmed Objective Response Rate (ORR) in the Hormone Receptor-Positive Cohort in Participants With HER2-low Breast Cancer",
+    "Best Overall Response and Confirmed Objective Response Rate (ORR) in Participants With HER2-low Breast Cancer (All Patients)",
+    "Duration of Response in the Hormone Receptor-Positive Cohort in Participants With HER2-low Breast Cancer",
+    "Duration of Response in Participants With HER2-low Breast Cancer (All Patients)"
+  ],
+  "study_type": "INTERVENTIONAL",
+  "allocation": "RANDOMIZED"
+}

@@ -1,0 +1,21 @@
+{
+  "nct_id": "NCT03529110",
+  "brief_title": "DS-8201a Versus T-DM1 for Human Epidermal Growth Factor Receptor 2 (HER2)-Positive, Unresectable and/or Metastatic Breast Cancer Previously Treated With Trastuzumab and Taxane [DESTINY-Breast03]",
+  "phase": [
+    "PHASE3"
+  ],
+  "enrollment_count": 524,
+  "enrollment_type": "ACTUAL",
+  "overall_status": "ACTIVE_NOT_RECRUITING",
+  "primary_endpoints": [
+    "Progression-Free Survival (PFS) Based on Blinded Independent Central Review (BICR) in Participants With HER2-Positive, Unresectable and/or Metastatic Breast Cancer Previously Treated With Trastuzumab and Taxane"
+  ],
+  "secondary_endpoints": [
+    "Overall Survival (OS) in Participants With HER2-Positive, Unresectable and/or Metastatic Breast Cancer Previously Treated With Trastuzumab and Taxane",
+    "Percentage of Participants With Objective Response Rate (ORR) Based on BICR and Investigator Assessment in Participants With HER2-Positive, Unresectable and/or Metastatic Breast Cancer Previously Treated With Trastuzumab and Taxane",
+    "Duration of Response (DoR) Based on BICR and Investigator Assessment in Participants With HER2-Positive, Unresectable and/or Metastatic Breast Cancer Previously Treated With Trastuzumab and Taxane",
+    "Progression-Free Survival (PFS) Based on Investigator Assessment in Participants With HER2-Positive, Unresectable and/or Metastatic Breast Cancer Previously Treated With Trastuzumab and Taxane"
+  ],
+  "study_type": "INTERVENTIONAL",
+  "allocation": "RANDOMIZED"
+}

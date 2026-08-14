@@ -1,0 +1,22 @@
+predictor,predictor_value,outcome_3cat,n,appraisal_ids,circular_caveat
+uplift_applied,applied_decisive,recommended,3,TA458; NICE_TA786; TA509,uplift_applied was coded FROM the outcome (e.g. 'applied_insufficient' means EoL/severity weighting was applied AND the outcome was still negative). Perfect separation against outcome_3cat is expected by construction and should not be reported as an independent finding.
+uplift_applied,applied_decisive,cdf_managed_access,2,NICE_TA704; NICE_TA862,uplift_applied was coded FROM the outcome (e.g. 'applied_insufficient' means EoL/severity weighting was applied AND the outcome was still negative). Perfect separation against outcome_3cat is expected by construction and should not be reported as an independent finding.
+uplift_applied,applied_insufficient,not_recommended,4,TA992; TA371; TA257_lap; TA257_tras,uplift_applied was coded FROM the outcome (e.g. 'applied_insufficient' means EoL/severity weighting was applied AND the outcome was still negative). Perfect separation against outcome_3cat is expected by construction and should not be reported as an independent finding.
+uplift_applied,not_applicable,recommended,4,TA632; TA424; NICE_TA569; NICE_TA612,uplift_applied was coded FROM the outcome (e.g. 'applied_insufficient' means EoL/severity weighting was applied AND the outcome was still negative). Perfect separation against outcome_3cat is expected by construction and should not be reported as an independent finding.
+era,post_2022_severity,not_recommended,1,TA992,
+era,post_2022_severity,recommended,1,NICE_TA786,
+era,post_2022_severity,cdf_managed_access,1,NICE_TA862,
+era,pre_2022_classic_eol,not_recommended,3,TA371; TA257_lap; TA257_tras,
+era,pre_2022_classic_eol,recommended,6,TA458; TA632; TA424; TA509; NICE_TA569; NICE_TA612,
+era,pre_2022_classic_eol,cdf_managed_access,1,NICE_TA704,
+eag_disagreement_ord,0,recommended,5,TA632; TA424; TA509; NICE_TA569; NICE_TA612,
+eag_disagreement_ord,1,recommended,2,TA458; NICE_TA786,
+eag_disagreement_ord,1,cdf_managed_access,1,NICE_TA862,
+eag_disagreement_ord,2,not_recommended,4,TA992; TA371; TA257_lap; TA257_tras,
+eag_disagreement_ord,2,cdf_managed_access,1,NICE_TA704,
+end_of_life,0,not_recommended,3,TA992; TA257_lap; TA257_tras,
+end_of_life,0,recommended,4,TA632; TA424; NICE_TA569; NICE_TA612,
+end_of_life,0,cdf_managed_access,1,NICE_TA862,
+end_of_life,1,not_recommended,1,TA371,
+end_of_life,1,recommended,3,TA458; NICE_TA786; TA509,
+end_of_life,1,cdf_managed_access,1,NICE_TA704,

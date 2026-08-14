@@ -1,0 +1,10 @@
+predictor,predictor_value,n_obs,excluded_outcome,trivial,circular_caveat
+uplift_applied,applied_insufficient,4,recommended,False,uplift_applied was coded FROM the outcome (e.g. 'applied_insufficient' means EoL/severity weighting was applied AND the outcome was still negative). Perfect separation against outcome_3cat is expected by construction and should not be reported as an independent finding.
+uplift_applied,applied_insufficient,4,cdf_managed_access,False,uplift_applied was coded FROM the outcome (e.g. 'applied_insufficient' means EoL/severity weighting was applied AND the outcome was still negative). Perfect separation against outcome_3cat is expected by construction and should not be reported as an independent finding.
+uplift_applied,applied_decisive,5,not_recommended,False,uplift_applied was coded FROM the outcome (e.g. 'applied_insufficient' means EoL/severity weighting was applied AND the outcome was still negative). Perfect separation against outcome_3cat is expected by construction and should not be reported as an independent finding.
+uplift_applied,not_applicable,4,not_recommended,False,uplift_applied was coded FROM the outcome (e.g. 'applied_insufficient' means EoL/severity weighting was applied AND the outcome was still negative). Perfect separation against outcome_3cat is expected by construction and should not be reported as an independent finding.
+uplift_applied,not_applicable,4,cdf_managed_access,False,uplift_applied was coded FROM the outcome (e.g. 'applied_insufficient' means EoL/severity weighting was applied AND the outcome was still negative). Perfect separation against outcome_3cat is expected by construction and should not be reported as an independent finding.
+eag_disagreement_ord,2,5,recommended,False,
+eag_disagreement_ord,1,3,not_recommended,False,
+eag_disagreement_ord,0,5,not_recommended,False,
+eag_disagreement_ord,0,5,cdf_managed_access,False,

@@ -1,0 +1,32 @@
+NICE_TA569_final_appraisal.pdf: 3940 words
+  no warnings
+
+NICE_TA612_final_appraisal.pdf: 3378 words
+  no warnings
+
+NICE_TA704_final appraisal.pdf: 5777 words
+  no warnings
+
+NICE_TA786_final_appraisal.pdf: 6562 words
+  no warnings
+
+NICE_TA862_final_appraisal.pdf: 5468 words
+  no warnings
+
+TA0992_evidence_based_recommendations.pdf: 7555 words
+  no warnings
+
+TA257_final_appraisal.pdf: 13303 words
+  no warnings
+
+TA424_final_appraisal.pdf: 7367 words
+  no warnings
+
+TA458_final_appraisal.pdf: 10123 words
+  no warnings
+
+TA509_final_appraisal.pdf: 4669 words
+  no warnings
+
+TA632_final_appraisal.pdf: 3156 words
+  no warnings
