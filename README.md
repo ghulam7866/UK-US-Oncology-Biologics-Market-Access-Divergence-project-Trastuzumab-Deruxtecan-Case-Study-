@@ -57,21 +57,19 @@ launch, four practical implications follow from these findings:
 
 Full mechanism and reasoning for each point is in Section 4 of the report.
 
----
-
 ## Repository structure
-├── report.pdf # Full report (start here)
-├── outputs/figures/ # All figures referenced in the report (numbered by section)
+├── outputs/
+│   ├── figures/                   # All figures referenced in the report (numbered by section)
+│   └── documentation/             # Report memo PDF + supplementary methodology docs
 ├── src/
-│ ├── data_sourcing/ # Scripts to pull and extract raw source data
-│ ├── analysis/ # Core analysis: coding, charts, threshold and uptake comparisons
-│ └── audit/ # Verification, separation diagnostics, and data QA scripts
+│   ├── data_sourcing/             # Scripts to pull and extract raw source data
+│   ├── analysis/                  # Core analysis: coding, charts, threshold and uptake comparisons
+│   └── audit/                     # Verification, separation diagnostics, and data QA scripts
 ├── data/
-│ ├── processed/ # Derived datasets, extraction logs, matched text outputs
-│ └── raw/
-│ └── sources.md # Links to all primary sources (see below)
+│   ├── processed/                 # Derived datasets, extraction logs, matched text outputs
+│   └── raw/
+│       └── sources.md             # Links to all primary sources
 └── README.md
----
 
 ## Data and sourcing
 
