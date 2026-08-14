@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 
 # Paths: raw data is in data/raw/nlp_raw_data; outputs go to outputs/
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 CORPUS_DIR = ROOT / "data" / "raw" / "nlp_raw data"
 OUTPUT_DIR = ROOT / "outputs"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

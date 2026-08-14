@@ -293,7 +293,7 @@ fig.text(
 )
 
 # Create output directory and save figure
-OUTPUT_DIR = Path(__file__).resolve().parents[1] / "outputs" / "figures"
+OUTPUT_DIR = Path(__file__).resolve().parents[2] / "outputs" / "figures"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 fig.savefig(OUTPUT_DIR / "uptake_comparison.png", dpi=200, bbox_inches="tight")
 print(f"Saved uptake_comparison.png to {OUTPUT_DIR}")

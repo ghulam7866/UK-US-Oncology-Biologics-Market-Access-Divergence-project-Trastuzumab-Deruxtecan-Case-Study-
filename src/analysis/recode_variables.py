@@ -28,7 +28,7 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
-PROCESSED_DIR = Path(__file__).resolve().parents[1] / "data" / "processed"
+PROCESSED_DIR = Path(__file__).resolve().parents[2] / "data" / "processed"
 # Verified input file (source-checked n=13 dataset)
 INPUT_FILE  = PROCESSED_DIR / "draft_coding_verified.csv"
 OUTPUT_FILE = PROCESSED_DIR / "coded_dataset_final.csv"

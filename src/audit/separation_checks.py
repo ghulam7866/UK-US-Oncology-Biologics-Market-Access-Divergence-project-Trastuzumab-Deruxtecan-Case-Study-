@@ -21,7 +21,7 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 
-PROCESSED_DIR = Path(__file__).resolve().parents[1] / "data" / "processed"
+PROCESSED_DIR = Path(__file__).resolve().parents[2] / "data" / "processed"
 INPUT_FILE  = PROCESSED_DIR / "coded_dataset_final.csv"
 OUTPUT_FILE = PROCESSED_DIR / "separation_report.csv"
 EXCLUSION_OUTPUT_FILE = PROCESSED_DIR / "exclusion_report.csv"

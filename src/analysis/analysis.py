@@ -32,7 +32,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 # 1. Data
 # ---------------------------------------------------------------------------
 # Paths derived from this file's location (script is in <root>/analysis/)
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data" / "processed"
 OUTPUT_DIR = ROOT / "outputs" / "figures"
 

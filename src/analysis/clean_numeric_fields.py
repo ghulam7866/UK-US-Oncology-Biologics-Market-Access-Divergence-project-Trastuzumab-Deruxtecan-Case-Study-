@@ -42,7 +42,7 @@ Usage:
 import csv
 from pathlib import Path
 
-PROCESSED_DIR = Path(__file__).resolve().parents[1] / "data" / "processed"
+PROCESSED_DIR = Path(__file__).resolve().parents[2] / "data" / "processed"
 INPUT_FILE  = PROCESSED_DIR / "coded_dataset_final.csv"
 OUTPUT_FILE = PROCESSED_DIR / "coded_dataset_numeric.csv"
 

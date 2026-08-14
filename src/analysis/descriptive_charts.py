@@ -41,13 +41,13 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 
-PROCESSED_DIR = Path(__file__).resolve().parents[1] / "data" / "processed"
+PROCESSED_DIR = Path(__file__).resolve().parents[2] / "data" / "processed"
 INPUT_FILE = PROCESSED_DIR / "coded_dataset_numeric.csv"
 
 # NOTE: adjust FIGURES_DIR if your project uses a different output
 # convention than outputs/figures/ - not verified against the existing
 # uptake_comparison.py / dumbbell chart output paths.
-FIGURES_DIR = Path(__file__).resolve().parents[1] / "outputs" / "figures"
+FIGURES_DIR = Path(__file__).resolve().parents[2] / "outputs" / "figures"
 
 # Fixed size of the verified training dataset (n=13). This number should be
 # updated only if the dataset is re-verified and expanded.

@@ -1,0 +1,81 @@
+document,label,market,theme,raw_hits,word_count,freq_per_1000_words
+NICE_TA_HER2low_2024,"NICE TA
+(HER2-low, 2024)
+NOT recommended",UK (NICE),Immature / extrapolated survival data,12,3955,3.03
+NICE_TA_HER2low_2024,"NICE TA
+(HER2-low, 2024)
+NOT recommended",UK (NICE),Surrogate endpoint validity (PFS→OS),1,3955,0.25
+NICE_TA_HER2low_2024,"NICE TA
+(HER2-low, 2024)
+NOT recommended",UK (NICE),Comparator selection / composition disputes,49,3955,12.39
+NICE_TA_HER2low_2024,"NICE TA
+(HER2-low, 2024)
+NOT recommended",UK (NICE),Population / trial generalizability,21,3955,5.31
+NICE_TA_HER2low_2024,"NICE TA
+(HER2-low, 2024)
+NOT recommended",UK (NICE),Utility / quality-of-life value uncertainty,35,3955,8.85
+NICE_TA_HER2low_2024,"NICE TA
+(HER2-low, 2024)
+NOT recommended",UK (NICE),Subgroup / small sample uncertainty,8,3955,2.02
+NICE_TA_HER2low_2024,"NICE TA
+(HER2-low, 2024)
+NOT recommended",UK (NICE),Structural / model assumption uncertainty,18,3955,4.55
+NICE_TA_HER2low_2024,"NICE TA
+(HER2-low, 2024)
+NOT recommended",UK (NICE),Price / cost-effectiveness threshold ambiguity,13,3955,3.29
+NICE_TA_HER2positive_2022,"NICE TA
+(HER2-positive, 2022)
+Managed access",UK (NICE),Immature / extrapolated survival data,28,3787,7.39
+NICE_TA_HER2positive_2022,"NICE TA
+(HER2-positive, 2022)
+Managed access",UK (NICE),Surrogate endpoint validity (PFS→OS),5,3787,1.32
+NICE_TA_HER2positive_2022,"NICE TA
+(HER2-positive, 2022)
+Managed access",UK (NICE),Comparator selection / composition disputes,4,3787,1.06
+NICE_TA_HER2positive_2022,"NICE TA
+(HER2-positive, 2022)
+Managed access",UK (NICE),Population / trial generalizability,6,3787,1.58
+NICE_TA_HER2positive_2022,"NICE TA
+(HER2-positive, 2022)
+Managed access",UK (NICE),Utility / quality-of-life value uncertainty,24,3787,6.34
+NICE_TA_HER2positive_2022,"NICE TA
+(HER2-positive, 2022)
+Managed access",UK (NICE),Subgroup / small sample uncertainty,7,3787,1.85
+NICE_TA_HER2positive_2022,"NICE TA
+(HER2-positive, 2022)
+Managed access",UK (NICE),Structural / model assumption uncertainty,15,3787,3.96
+NICE_TA_HER2positive_2022,"NICE TA
+(HER2-positive, 2022)
+Managed access",UK (NICE),Price / cost-effectiveness threshold ambiguity,6,3787,1.58
+US_Peng_2023,"Peng et al. 2023
+(Clin Ther)",US (academic CEA),Immature / extrapolated survival data,3,1067,2.81
+US_Peng_2023,"Peng et al. 2023
+(Clin Ther)",US (academic CEA),Surrogate endpoint validity (PFS→OS),0,1067,0.0
+US_Peng_2023,"Peng et al. 2023
+(Clin Ther)",US (academic CEA),Comparator selection / composition disputes,8,1067,7.5
+US_Peng_2023,"Peng et al. 2023
+(Clin Ther)",US (academic CEA),Population / trial generalizability,2,1067,1.87
+US_Peng_2023,"Peng et al. 2023
+(Clin Ther)",US (academic CEA),Utility / quality-of-life value uncertainty,2,1067,1.87
+US_Peng_2023,"Peng et al. 2023
+(Clin Ther)",US (academic CEA),Subgroup / small sample uncertainty,18,1067,16.87
+US_Peng_2023,"Peng et al. 2023
+(Clin Ther)",US (academic CEA),Structural / model assumption uncertainty,4,1067,3.75
+US_Peng_2023,"Peng et al. 2023
+(Clin Ther)",US (academic CEA),Price / cost-effectiveness threshold ambiguity,18,1067,16.87
+US_Shi_2023,"Shi et al. 2023
+(PLOS ONE)",US (academic CEA),Immature / extrapolated survival data,1,1015,0.99
+US_Shi_2023,"Shi et al. 2023
+(PLOS ONE)",US (academic CEA),Surrogate endpoint validity (PFS→OS),0,1015,0.0
+US_Shi_2023,"Shi et al. 2023
+(PLOS ONE)",US (academic CEA),Comparator selection / composition disputes,7,1015,6.9
+US_Shi_2023,"Shi et al. 2023
+(PLOS ONE)",US (academic CEA),Population / trial generalizability,2,1015,1.97
+US_Shi_2023,"Shi et al. 2023
+(PLOS ONE)",US (academic CEA),Utility / quality-of-life value uncertainty,4,1015,3.94
+US_Shi_2023,"Shi et al. 2023
+(PLOS ONE)",US (academic CEA),Subgroup / small sample uncertainty,1,1015,0.99
+US_Shi_2023,"Shi et al. 2023
+(PLOS ONE)",US (academic CEA),Structural / model assumption uncertainty,3,1015,2.96
+US_Shi_2023,"Shi et al. 2023
+(PLOS ONE)",US (academic CEA),Price / cost-effectiveness threshold ambiguity,3,1015,2.96

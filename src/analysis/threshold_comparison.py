@@ -165,7 +165,7 @@ def make_plot():
 
 if __name__ == "__main__":
     fig = make_plot()
-    OUTPUT_DIR = Path(__file__).resolve().parents[1] / "outputs" / "figures"
+    OUTPUT_DIR = Path(__file__).resolve().parents[2] / "outputs" / "figures"
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUTPUT_DIR / "threshold_comparison.png", dpi=180)
     print(f"Saved threshold_comparison.png to {OUTPUT_DIR}")
