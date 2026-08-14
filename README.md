@@ -161,8 +161,7 @@ In brief:
 
 ## About
 
-This project was built as a dual-audience portfolio piece: an MSc application 
-portfolio project (targeting UK health economics and health policy programmes) 
+This project was built as a dual-audience portfolio piece: a student portfolio piece
 and a market-access-consulting-style memo. 
 
 Ghulam Mustafa · Contact: bw004616@student.reading.ac.uk or gm408737@gmail.com
