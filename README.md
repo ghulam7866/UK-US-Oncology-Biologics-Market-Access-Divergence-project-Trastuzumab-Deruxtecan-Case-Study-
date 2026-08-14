@@ -58,6 +58,7 @@ launch, four practical implications follow from these findings:
 Full mechanism and reasoning for each point is in Section 4 of the report.
 
 ## Repository structure
+```text
 ├── outputs/
 │   ├── figures/                   # All figures referenced in the report (numbered by section)
 │   └── documentation/             # Report memo PDF + supplementary methodology docs
@@ -70,7 +71,7 @@ Full mechanism and reasoning for each point is in Section 4 of the report.
 │   └── raw/
 │       └── sources.md             # Links to all primary sources
 └── README.md
-
+```
 ## Data and sourcing
 
 This project draws on publicly available NICE technology appraisals, US 
