@@ -1,1 +1,0 @@
-$(function(){$(window).scroll(function(){if($(this).scrollTop()>100){$("#toTop").addClass("show")}else{$("#toTop").removeClass("show")}});$("#toTop").click(function(){$("body,html").animate({scrollTop:0},300)})});

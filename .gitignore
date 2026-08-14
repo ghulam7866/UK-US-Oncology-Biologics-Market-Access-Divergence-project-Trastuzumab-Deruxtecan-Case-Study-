@@ -7,3 +7,4 @@ venv/
 ta-recommendations.xlsx
 diagnostics.png
 uptake_comparison.png
+data/raw/nlp_raw_data/
