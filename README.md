@@ -140,7 +140,7 @@ Install all required Python packages with:
 pip install -r requirements.txt
 ```
 
-The `requirements.txt` file in the repository root lists the exact packages and minimum versions needed.
+The [`requirements.txt`](./requirements.txt) file in the repository root lists the exact packages and minimum versions needed.
 
 ### Steps
 
