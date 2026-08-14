@@ -123,20 +123,54 @@ study anchor from TA992 to TA862, is documented in the report's Methodology
 Appendix.
 
 ---
+Reproducing this analysis
+Dependencies
 
-## Reproducing this analysis
+Install all required Python packages with:
+bash
 
-1. Pull primary source documents using the URLs in `data/raw/sources.md`.
-2. Run extraction scripts in `src/data_sourcing/` to regenerate raw text/data 
-   inputs.
-3. Run scripts in `src/analysis/` to reproduce charts and comparisons.
-4. Run scripts in `src/audit/` to reproduce verification and diagnostic checks 
-   (EAG separation analysis, leave-one-out sensitivity, events-per-variable 
-   calculations).
+pip install -r requirements.txt
 
-*(Dependencies: [list your Python packages / requirements.txt here if you have one])*
+The requirements.txt file in the repository root lists the exact packages and minimum versions needed.
+Steps
 
----
+    Clone the repository and cd into it.
+
+    Install dependencies as above.
+
+    Pull primary source documents using the URLs in data/raw/sources.md.
+
+    Regenerate raw text/data inputs:
+    bash
+
+    python src/data_sourcing/clinicaltrials_pull.py
+    python src/data_sourcing/extract_nice_pdfs.py
+    python src/data_sourcing/search_key_figures.py
+
+    Regenerate the coded dataset:
+    bash
+
+    python src/analysis/clean_numeric_fields.py
+    python src/analysis/recode_variables.py
+
+    Reproduce the core analysis and figures:
+    bash
+
+    python src/analysis/analysis.py
+    python src/analysis/descriptive_charts.py
+    python src/analysis/theme_extraction.py
+    python src/analysis/threshold_comparison.py
+    python src/analysis/uptake_comparison.py
+
+    Reproduce audit and diagnostic checks:
+    bash
+
+    python src/audit/verify_trial_data.py
+    python src/audit/separation_checks.py
+    python src/audit/verify_ta992_timeline.py
+    python src/audit/verify_cms_j9358.py
+    python src/audit/check_cdf_false_positives.py
+    python src/audit/peng_noise_vs_signal.py
 
 ## Limitations
 
