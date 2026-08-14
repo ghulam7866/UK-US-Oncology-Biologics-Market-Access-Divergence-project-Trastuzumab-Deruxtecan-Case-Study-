@@ -1,0 +1,14 @@
+﻿data/raw/
+data/processed/
+outputs/
+*.pdf
+*.png
+*.jpg
+*.csv
+*.json
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+ta-recommendations.xlsx
