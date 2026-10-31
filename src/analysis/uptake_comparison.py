@@ -20,8 +20,10 @@ DATA PROVENANCE -- every figure below is sourced and verifiable:
       Oncology Practice Management, "Enhertu Received Regular FDA Approval..."
 
   UK NICE final appraisal document (TA862):
-      20 Dec 2022
+      November 2022 (exact day unverified; original date was incorrect)
       Source: nice.org.uk/guidance/TA862/history
+      NOTE: the chart represents this as a date range, 1-30 November,
+      rather than inventing an exact date.
 
   UK NICE published guidance (TA862, managed access):
       1 Feb 2023
@@ -79,16 +81,25 @@ from pathlib import Path
 
 US_APPROVAL = date(2022, 5, 4)
 US_NCCN_LISTING_NOTE = "V2.2022 (contemporaneous -- no day-level date available)"
-UK_FINAL_APPRAISAL_DOC = date(2022, 12, 20)
+# The exact day of the final appraisal document could not be verified.
+# Represent November as a range instead of fabricating a precise date.
+UK_FINAL_APPRAISAL_START = date(2022, 11, 1)
+UK_FINAL_APPRAISAL_END = date(2022, 11, 30)
 UK_PUBLISHED_GUIDANCE = date(2023, 2, 1)
 TA992_REJECTION = date(2024, 7, 29)
 
 UK_ELIGIBLE_PER_YEAR = 600  # NICE resource impact statement, TA862
 
-# Administrative lag, computed directly from the verified dates above
-LAG_TO_FINAL_DOC_DAYS = (UK_FINAL_APPRAISAL_DOC - US_APPROVAL).days
+# Administrative lag: final appraisal document is an interval because the
+# exact November day is unverified. Published-guidance date remains exact.
+LAG_TO_FINAL_DOC_MIN_DAYS = (UK_FINAL_APPRAISAL_START - US_APPROVAL).days
+LAG_TO_FINAL_DOC_MAX_DAYS = (UK_FINAL_APPRAISAL_END - US_APPROVAL).days
 LAG_TO_PUBLISHED_DAYS = (UK_PUBLISHED_GUIDANCE - US_APPROVAL).days
-LAG_TO_FINAL_DOC_MONTHS = LAG_TO_FINAL_DOC_DAYS / 30.44
+LAG_TO_FINAL_DOC_MIN_MONTHS = LAG_TO_FINAL_DOC_MIN_DAYS / 30.44
+LAG_TO_FINAL_DOC_MAX_MONTHS = LAG_TO_FINAL_DOC_MAX_DAYS / 30.44
+LAG_TO_FINAL_DOC_MID_MONTHS = (
+    LAG_TO_FINAL_DOC_MIN_MONTHS + LAG_TO_FINAL_DOC_MAX_MONTHS
+) / 2
 LAG_TO_PUBLISHED_MONTHS = LAG_TO_PUBLISHED_DAYS / 30.44
 
 # US real-world cohorts -- aggregate totals only
@@ -155,17 +166,25 @@ ax1.annotate(
     fontsize=8,
 )
 
-# UK milestones -- these two points are only 43 days apart, so stagger the
-# labels with leader lines rather than stacking text directly below each
-# point (which caused overlapping text)
-ax1.scatter([UK_FINAL_APPRAISAL_DOC], [y_uk], s=70, color="#ff7f0e", zorder=3)
+# UK final appraisal document: show the full possible November date range.
+# The exact day is unverified, so do not plot a fabricated point date.
+# Show the possible November appraisal period as a thin line.
+# The exact date remains unverified.
+ax1.plot(
+    [UK_FINAL_APPRAISAL_START, UK_FINAL_APPRAISAL_END],
+    [y_uk, y_uk],
+    color="#ff7f0e",
+    linewidth=1.5,
+    linestyle="--",
+    zorder=4,
+)
 ax1.annotate(
-    "UK: final appraisal doc\n20 Dec 2022",
-    xy=(UK_FINAL_APPRAISAL_DOC, y_uk),
-    xytext=(-55, -50),
+    "UK: final appraisal doc\nNovember 2022 (exact day unverified)",
+    xy=(UK_FINAL_APPRAISAL_START + (UK_FINAL_APPRAISAL_END - UK_FINAL_APPRAISAL_START) / 2, y_uk),
+    xytext=(-30, -50),
     textcoords="offset points",
     ha="center",
-    fontsize=8.5,
+    fontsize=8.2,
     arrowprops=dict(arrowstyle="-", color="#999999", lw=0.8,
                      shrinkA=0, shrinkB=5),
 )
@@ -199,21 +218,6 @@ ax1.annotate(
     color="#555555",
 )
 
-# US real-world cohort markers (midpoint of enrollment window)
-for cohort in US_COHORTS:
-    window_start, window_end = cohort["window"]
-    midpoint = window_start + (window_end - window_start) / 2
-    ax1.scatter([midpoint], [1.5], s=80, color="#4c72b0", marker="D", zorder=3)
-    ax1.annotate(
-        cohort["label"],
-        xy=(midpoint, 1.5),
-        xytext=(0, 8),
-        textcoords="offset points",
-        ha="center",
-        fontsize=7,
-        color="#4c72b0",
-    )
-
 ax1.set_ylim(-1.8, 2.1)
 ax1.set_yticks([])
 ax1.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
@@ -227,18 +231,36 @@ ax1.margins(x=0.15)
 ax2.set_title("Administrative lag\n(from US approval)", fontsize=11, loc="center")
 
 bars_labels = ["To UK final\nappraisal doc", "To UK guidance\npublished"]
-bars_values = [LAG_TO_FINAL_DOC_MONTHS, LAG_TO_PUBLISHED_MONTHS]
+bars_values = [LAG_TO_FINAL_DOC_MID_MONTHS, LAG_TO_PUBLISHED_MONTHS]
 bar_colors = ["#ff7f0e", "#d62728"]
 
-bars = ax2.bar(bars_labels, bars_values, color=bar_colors, width=0.55)
-for bar, val in zip(bars, bars_values):
+
+# Plot administrative lag without error bars.
+# The first bar's label shows the possible November date range.
+bars = ax2.bar(
+    bars_labels,
+    bars_values,
+    color=bar_colors,
+    width=0.55,
+)
+
+for i, (bar, val) in enumerate(zip(bars, bars_values)):
+    if i == 0:
+        label = (
+            f"{LAG_TO_FINAL_DOC_MIN_MONTHS:.1f}"
+            f"–{LAG_TO_FINAL_DOC_MAX_MONTHS:.1f} mo"
+        )
+    else:
+        label = f"{val:.1f} mo"
+
     ax2.annotate(
-        f"{val:.1f} mo",
+        label,
         xy=(bar.get_x() + bar.get_width() / 2, val),
-        xytext=(0, 4),
+        xytext=(0, 7),
         textcoords="offset points",
         ha="center",
-        fontsize=9,
+        va="bottom",
+        fontsize=8.5,
         fontweight="bold",
     )
 
@@ -248,7 +270,7 @@ for spine in ["top", "right"]:
     ax2.spines[spine].set_visible(False)
 ax2.text(
     0.5, -0.30,
-    "Even the earlier milestone (final appraisal doc)\nlags full US market access by ~8 months",
+    "Final appraisal document lag is a range because\nthe exact day in November is unverified due to the deletion of TA862 guidance following TA1202",
     transform=ax2.transAxes,
     ha="center", va="top", fontsize=7.5, color="#666666",
 )
@@ -297,5 +319,10 @@ OUTPUT_DIR = Path(__file__).resolve().parents[2] / "outputs" / "figures"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 fig.savefig(OUTPUT_DIR / "uptake_comparison.png", dpi=200, bbox_inches="tight")
 print(f"Saved uptake_comparison.png to {OUTPUT_DIR}")
-print(f"Lag to final appraisal doc: {LAG_TO_FINAL_DOC_DAYS} days ({LAG_TO_FINAL_DOC_MONTHS:.2f} months)")
+print(
+    "Lag to final appraisal doc: "
+    f"{LAG_TO_FINAL_DOC_MIN_DAYS}–{LAG_TO_FINAL_DOC_MAX_DAYS} days "
+    f"({LAG_TO_FINAL_DOC_MIN_MONTHS:.2f}–{LAG_TO_FINAL_DOC_MAX_MONTHS:.2f} months; "
+    "November date range, exact day unverified)"
+)
 print(f"Lag to published guidance:  {LAG_TO_PUBLISHED_DAYS} days ({LAG_TO_PUBLISHED_MONTHS:.2f} months)")
