@@ -137,9 +137,8 @@ evidentiary weight:
 A predictive model (logistic regression / gradient boosting) was deliberately
 **not** used for the n=13 dataset after diagnostic testing showed complete
 separation and severe leave-one-out coefficient instability, a known failure
-mode of maximum-likelihood estimation at small sample sizes. The diagnostics are
-in `[path to regression / leave-one-out script]`. This is documented as a
-methodological finding in its own right (see report, Section 3.1 and
+mode of maximum-likelihood estimation at small sample sizes. This is documented
+as a methodological finding in its own right (see report, Section 3.1 and
 Methodology Appendix B) rather than smoothed over.
 
 Full methodology, including the rationale for shifting the illustrative case
