@@ -5,7 +5,7 @@ the same medicine, trastuzumab deruxtecan (T-DXd, brand name Enhertu), across tw
 distinct indications (HER2-positive and HER2-low metastatic breast cancer).
 
 The project combines a verified n=13 dataset of NICE technology appraisals, a
-four-document NLP theme comparison of NICE and US cost-effectiveness literature,
+four-document regex-based theme comparison of NICE and US cost-effectiveness literature,
 and a single-medicine case study isolating indication-level and jurisdictional
 divergence in reimbursement outcomes.
 
@@ -110,7 +110,7 @@ evidentiary weight:
    and HER2-low breast cancer biologics, independently cross-checked against
    primary NICE guidance documents using purpose-built verification scripts
    (`verify_trial_data.py`, `verify_ta992_timeline.py`, `verify_cms_j9358.py`).
-2. **A four-document NLP thematic comparison** (`theme_extraction.py`) of two
+2. **A four-document regex-based thematic comparison** (`theme_extraction.py`) of two
    NICE appraisals against two US academic cost-effectiveness papers, using
    keyword-based extraction normalised per 1,000 words.
 3. **A single-medicine, two-indication case study** of T-DXd (TA862 vs. TA992),
