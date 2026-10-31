@@ -4,7 +4,7 @@ uptake_comparison.py
 3.3 -- UK vs US Market Entry / Uptake Comparison: Enhertu (TA862) case study
 =============================================================================
 
-Consulting-deliverable framing: quantifies the administrative lag between US
+Consulting-deliverable framing: quantifies the  lag between US
 regulatory approval and UK managed-access availability for trastuzumab
 deruxtecan (Enhertu) in the HER2-positive, 2nd-line breast cancer indication
 (NICE TA862), and contrasts this against TA992 (HER2-low), where NICE
@@ -65,7 +65,7 @@ EXPLICIT LIMITATION (flag, don't fabricate):
 
 Output: uptake_comparison.png (three-panel layout)
   Panel 1: Milestone timeline (US approval -> UK MAA-live), Gantt-style
-  Panel 2: Administrative lag, quantified in months
+  Panel 2: lag, quantified in months
   Panel 3: TA862 vs TA992 outcome contrast (managed access vs flat rejection)
 """
 
@@ -90,7 +90,7 @@ TA992_REJECTION = date(2024, 7, 29)
 
 UK_ELIGIBLE_PER_YEAR = 600  # NICE resource impact statement, TA862
 
-# Administrative lag: final appraisal document is an interval because the
+# Lag: final appraisal document is an interval because the
 # exact November day is unverified. Published-guidance date remains exact.
 LAG_TO_FINAL_DOC_MIN_DAYS = (UK_FINAL_APPRAISAL_START - US_APPROVAL).days
 LAG_TO_FINAL_DOC_MAX_DAYS = (UK_FINAL_APPRAISAL_END - US_APPROVAL).days
@@ -227,15 +227,15 @@ for spine in ["top", "right", "left"]:
     ax1.spines[spine].set_visible(False)
 ax1.margins(x=0.15)
 
-# --- Panel 2: administrative lag, quantified --------------------------------
-ax2.set_title("Administrative lag\n(from US approval)", fontsize=11, loc="center")
+# --- Panel 2, lag by UK milestone, quantified --------------------------------
+ax2.set_title("lag by UK milestone\n(from US approval)", fontsize=11, loc="center")
 
 bars_labels = ["To UK final\nappraisal doc", "To UK guidance\npublished"]
 bars_values = [LAG_TO_FINAL_DOC_MID_MONTHS, LAG_TO_PUBLISHED_MONTHS]
 bar_colors = ["#ff7f0e", "#d62728"]
 
 
-# Plot administrative lag without error bars.
+# Plot lag without error bars.
 # The first bar's label shows the possible November date range.
 bars = ax2.bar(
     bars_labels,
